@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-
+ 
 // 1. Abstract Product (Product)
 class Document {
 public:
