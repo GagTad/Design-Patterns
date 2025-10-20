@@ -32,9 +32,9 @@ This implementation follows the classic structure of the Builder pattern:
 -   `ComputerBuilder.h` / `ComputerBuilder.cpp`: Defines and implements the `ComputerBuilder` class (the Builder).
 -   `ComputerDirector.h` / `ComputerDirector.cpp`: Defines and implements the `ComputerDirector` class (the Director).
 -   `main.cpp`: The client code that demonstrates three usage scenarios:
-     .  Using the `Director` to build a standard "Gaming PC".
-     .  Using the `Director` to build a standard "Office PC".
-     .  Using the `Builder` directly to create a custom PC configuration.
+     1.  Using the `Director` to build a standard "Gaming PC".
+     2.  Using the `Director` to build a standard "Office PC".
+     3.  Using the `Builder` directly to create a custom PC configuration.
 
 ## How to Compile and Run
 
