@@ -1,20 +1,32 @@
-﻿// Builder.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include "Computer.h"
+#include "ComputerBuilder.h"
+#include "ComputerDirector.h"
+#include <memory>
 
-#include <iostream>
+int main() {
+    std::cout << "--- Using Director to build a Gaming PC ---" << std::endl;
+    ComputerBuilder gamingBuilder;
+    ComputerDirector director;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+    director.constructGamingPC(gamingBuilder);
+    std::unique_ptr<Computer> gamingPC = gamingBuilder.build();
+    gamingPC->show();
+
+    std::cout << "--- Using Director to build an Office PC ---" << std::endl;
+    ComputerBuilder officeBuilder;
+    director.constructOfficePC(officeBuilder);
+    std::unique_ptr<Computer> officePC = officeBuilder.build();
+    officePC->show();
+
+
+    std::cout << "--- Using Builder directly for a custom PC ---" << std::endl;
+    ComputerBuilder customBuilder;
+    std::unique_ptr<Computer> customPC = customBuilder
+                                            .setCPU("AMD Ryzen 5")
+                                            .setRAM("16GB DDR4")
+                                            .setStorage("1TB NVMe SSD")
+                                            .build();
+    customPC->show();
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
