@@ -12,3 +12,7 @@ Instead of the remote calling `light->turnOn()` directly, we encapsulate the req
 2.  **`Light` (Receiver)**: The actual device that performs the work (`turnOn`, `turnOff`).
 3.  **`LightOnCommand` / `LightOffCommand` (Concrete Commands)**: Classes that implement `ICommand`. They hold a pointer to `Light` and bind the `execute()` method to the appropriate action on the light.
 4.  **`RemoteControl` (Invoker)**: It holds a command object and asks it to execute the request when the button is pressed. It doesn't know details about the Light class.
+
+
+
+<img width="435" height="913" alt="image" src="https://github.com/user-attachments/assets/589fb1dc-c01d-413e-b31c-6b5d6fd956ae" />
