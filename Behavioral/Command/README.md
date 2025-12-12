@@ -15,4 +15,4 @@ Instead of the remote calling `light->turnOn()` directly, we encapsulate the req
 
 
 
-<img width="435" height="913" alt="image" src="https://github.com/user-attachments/assets/589fb1dc-c01d-413e-b31c-6b5d6fd956ae" />
+<img width="200" height="700" alt="image" src="https://github.com/user-attachments/assets/589fb1dc-c01d-413e-b31c-6b5d6fd956ae" />
