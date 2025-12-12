@@ -17,3 +17,4 @@ Instead of writing complex `if-else` or `switch` statements inside the MusicPlay
 3.  **`StoppedState` & `PlayingState` (Concrete States)**:
     *   Implement the actual logic for each action.
     *   Handle state transitions (e.g., `StoppedState` switches the player to `PlayingState` when Play is pressed).
+<img width="717" height="816" alt="image" src="https://github.com/user-attachments/assets/c873a0f2-bc16-47ce-b9cf-e976defe0298" />
