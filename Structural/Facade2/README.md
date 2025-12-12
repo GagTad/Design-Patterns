@@ -19,3 +19,6 @@ The **Facade** pattern provides a simplified interface (a single class) that han
 
 3.  **`main.cpp` (The Client)**:
     *   The client code is clean and simple. It doesn't need to know the order in which to turn on the devices; it just calls the Facade.
+
+
+<img width="330" height="450" alt="image" src="https://github.com/user-attachments/assets/d7673ddd-5a08-4b9a-a0c9-7ee79e7199dc" />
