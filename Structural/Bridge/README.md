@@ -10,3 +10,6 @@
 *   **`AdvancedRemote.h / .cpp`**: Refined abstraction with extra features.
 *   **`main.cpp`**: Entry point demonstrating the interaction between different remotes and devices.
 
+
+
+<img width="400" height="510" alt="image" src="https://github.com/user-attachments/assets/09c895bc-42c9-4494-b2f6-8c6abb09863f" />
